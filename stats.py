@@ -5,6 +5,7 @@ def get_book_text(path):
     
 text = get_book_text("books/frankenstein.txt")
 words = text.split()
+character_count = {}
 
 def get_num_words():
    num_words = len(words)
@@ -15,7 +16,6 @@ def unique_character():
     #needed help on this function, what I did wrong was I tried to do each step individually instead of nesting my functions together to make them work together. 
     # I tried to store everything as an indididual variable to then add into the dictionary at the end, instead of iterating over the word, and then over the character, and adding
     # to the dict when necessary.
-    character_count = {}
     for word in words:
         for char in word.lower():
             if char in character_count:
