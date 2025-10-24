@@ -6,10 +6,13 @@ def get_book_text(path):
 text = get_book_text("books/frankenstein.txt")
 words = text.split()
 character_count = {}
+sorted_list = []
+word_amount = 0
 
 def get_num_words():
-   num_words = len(words)
-   print (f"Found {num_words} total words")
+   global word_amount
+   word_amount = len(words)
+   return word_amount
 get_num_words()
 
 def unique_character():
@@ -25,8 +28,6 @@ def unique_character():
     #print (character_count)
 unique_character()
 
-sorted_list = []
-
 def status_report():
     for char, count in character_count.items():
         sorted_character_count = {}
@@ -34,10 +35,12 @@ def status_report():
             sorted_character_count["char"] = char
             sorted_character_count["num"] = count
             sorted_list.append(sorted_character_count)
+
     def sort_on(sorted_character_count):
         return sorted_character_count["num"]
+    
     sorted_list.sort(reverse=True, key = sort_on)
-    print(sorted_list)
 
+    
 status_report()
 
