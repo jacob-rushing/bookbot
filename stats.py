@@ -29,5 +29,5 @@ kowalski_count = {}
 
 def kowalski():
 #kowalski! status report
-    print(kowalski)
+    return(kowalski)
 kowalski()
