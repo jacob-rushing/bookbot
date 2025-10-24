@@ -1,4 +1,6 @@
 from stats import *
 def main():
-    return(get_num_words,unique_character,kowalski)
+    print("============ BOOKBOT ============")
+    print(f"Analyzing book found at ")
+    return(get_num_words,status_report,)
 main()

@@ -22,12 +22,22 @@ def unique_character():
                 character_count[char] += 1
             else:
                 character_count[char] = 1
-    print (character_count)
+    #print (character_count)
 unique_character()
 
-kowalski_count = {}
+sorted_list = []
 
-def kowalski():
-#kowalski! status report
-    return(kowalski)
-kowalski()
+def status_report():
+    for char, count in character_count.items():
+        sorted_character_count = {}
+        if char not in sorted_list:
+            sorted_character_count["char"] = char
+            sorted_character_count["num"] = count
+            sorted_list.append(sorted_character_count)
+    def sort_on(sorted_character_count):
+        return sorted_character_count["num"]
+    sorted_list.sort(reverse=True, key = sort_on)
+    print(sorted_list)
+
+status_report()
+
