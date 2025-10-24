@@ -25,6 +25,8 @@ def unique_character():
     print (character_count)
 unique_character()
 
+kowalski_count = {}
+
 def kowalski():
 #kowalski! status report
     print(kowalski)
