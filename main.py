@@ -8,4 +8,4 @@ def main():
     for i in sorted_list:
         print(f"{i['char']}: {i['num']}")
         
-main()
+main()  

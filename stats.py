@@ -40,7 +40,5 @@ def status_report():
         return sorted_character_count["num"]
     
     sorted_list.sort(reverse=True, key = sort_on)
-
-    
 status_report()
 
